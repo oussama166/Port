@@ -12,29 +12,31 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const postTemplate = path.resolve(`src/templates/post.js`);
   const tagTemplate = path.resolve('src/templates/tag.js');
 
-  const result = await graphql(`
-    {
-      postsRemark: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/posts/" } }
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
-        edges {
-          node {
-            frontmatter {
-              slug
-            }
-          }
-        }
-      }
-      tagsGroup: allMarkdownRemark(limit: 2000) {
-        group(field: frontmatter___tags) {
-          fieldValue
-        }
-      }
-    }
-  `);
+  const result = null;
+  // const result = await graphql(`
+  //   {
+  //     postsRemark: allMarkdownRemark(
+  //       filter: { fileAbsolutePath: { regex: "/content/posts/" } }
+  //       sort: { order: DESC, fields: [frontmatter___date] }
+  //       limit: 1000
+  //     ) {
+  //       edges {
+  //         node {
+  //           frontmatter {
+  //             slug
+  //           }
+  //         }
+  //       }
+  //     }
+  //     tagsGroup: allMarkdownRemark(limit: 2000) {
+  //       group(field: frontmatter___tags) {
+  //         fieldValue
+  //       }
+  //     }
+  //   }
+  // `);
 
+  if (result == null) return;
   // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
