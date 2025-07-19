@@ -1,7 +1,6 @@
 const config = require('./src/config');
 
 module.exports = {
-  pathPrefix: 'Port',
   siteMetadata: {
     title: 'Oussama Ouardi',
     description:
@@ -11,6 +10,7 @@ module.exports = {
     twitterUsername: '@',
     favicon: 'src/images/favicon-16x16.png',
   },
+  pathPrefix: '/Port',
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
