@@ -76,11 +76,7 @@ const Hero = () => {
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href="https://github.com/oussama166/main/README.md"
-      target="_blank"
-      rel="noreferrer">
+    <a className="email-link" href="https://github.com/oussama166" target="_blank" rel="noreferrer">
       Check out github!
     </a>
   );

@@ -1,14 +1,18 @@
 ---
 date: '4'
-title: 'Automation Framework'
+title: 'Automation Test Framework'
 cover: './demo.png'
-github: 'https://github.com/oussama166/wave_live_wire.git'
+github: '#'
 external: ''
 cta: ''
 tech:
   - Java
   - Apache POI
-  - AvantStack
+  - Cucumber
+  - TestNg
 ---
-
-To simplify **HR management**, I developed the Wave HR system, which streamlines leave requests, conflict resolution, and administrative form generation. Built with [PHP](https://www.php.net/), [Laravel](https://laravel.com), [Livewire](https://laravel-livewire.com/), and [TailwindCSS](https://tailwindcss.com/), this system improves efficiency and reduces errors, offering a scalable solution for HR teams to manage their workforce effectively.
+<p>
+This project focused on enhancing quality assurance for a <b>critical back-office application</b> used for managing vehicle orders.
+</p>
+My primary contribution was to <a href="#">automate functional tests</a> using <b><i>Java</i></b> and <b><i>Selenium WebDriver</i></b>, ensuring robust non-regression testing.
+I also developed an innovative <a href="#">automation tool to streamline</a> test user identifier management, specifically by <b>extracting expired credentials from Excel files and automating notifications for regeneration</b>. This significantly improved testing efficiency and reliability.

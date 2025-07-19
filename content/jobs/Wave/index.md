@@ -1,7 +1,7 @@
 ---
 date: '2018-05-14'
 title: 'Intern - Web Dev'
-company: 'Wave Inc.'
+company: 'Wave Inc'
 location: 'Temara, Morocco'
 range: 'Juin - Sept 2024'
 url: 'https://www.wave.ma/'
